@@ -1,6 +1,33 @@
 /* global $ */
 
 $(document).ready(function() {
+    function question1(x){
+        if(x === "reading"){
+            return 1;
+        } else if (x === "coding"){
+            return 2;
+        } else if (x === "playing a sport"){
+            return 3;
+        } else if (x === "designing clothing"){
+            return 4;
+        }
+    }
+    function question2(x){
+        if(x === "waffles"){
+            return 1;
+        } else if (x === "pancakes"){
+            return 2;
+        } else if (x === "french toast"){
+            return 3;
+    }
+     function question3(x){
+        if(x === "dolphin"){
+            return 1;
+        } else{
+            
+        }
+
+
     $("button").click(function() {
         var name = $("#name").val();
         var finalAnswer = "TBD";
