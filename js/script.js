@@ -1,6 +1,6 @@
 /* global $ */
 
-$(document).ready(function() {
+$(document).ready(function(){
     function question1(x){
         if(x === "reading"){
             return 1;
@@ -19,15 +19,17 @@ $(document).ready(function() {
             return 2;
         } else if (x === "french toast"){
             return 3;
+        }
     }
      function question3(x){
         if(x === "dolphin"){
             return 1;
-        } else{
-            
-        }
-
-
+        } else if (x === "whale"){
+            return 2;
+        } else if (x === "shark"){
+            return 3;
+    }
+}
     $("button").click(function() {
         var name = $("#name").val();
         var finalAnswer = "TBD";
@@ -37,5 +39,5 @@ $(document).ready(function() {
         var q3Input = $("#question3").val();
         var totalScore;
     });
-
+    
 });
